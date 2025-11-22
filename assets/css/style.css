@@ -159,6 +159,7 @@ body::before {
    font-size: 14px;
    font-weight: 300;
 }
+
 /* Responsive adjustments */
 @media (min-width: 500px) and (max-width: 600px) {
     .card-bg-img {
