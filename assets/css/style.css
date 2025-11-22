@@ -186,6 +186,6 @@ body::before {
         width: calc(100% + 20px);
     }
     .coming-soon-card h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
