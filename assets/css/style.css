@@ -259,9 +259,9 @@ body::before {
         top: 26px;
     }
     .lang-toggle {
-        padding: 9px 12px;
+        padding: 9px 12px !important;
     }
     [lang="en"] .lang-toggle {
-        padding: 7px 12px 11px 12px !important
+        padding: 7px 12px 11px 12px !important;
     }
 }
