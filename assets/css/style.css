@@ -196,7 +196,6 @@ body::before {
     margin: 0 0 10px 0;
 }
 .coming-soon-card span {
-    font-weight: 600;
     color: #6610f2;
 }
 /* Bottom audio player */
