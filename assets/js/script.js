@@ -3,6 +3,7 @@ const logoText = document.getElementById('logoText');
 const cardTitle = document.getElementById('cardTitle');
 const cardText1 = document.getElementById('cardText1');
 const cardText2 = document.getElementById('cardText2');
+const cardText3 = document.getElementById('cardText3').querySelector('span');
 const disclaimer = document.getElementById('disclaimer');
 
 const texts = {
@@ -13,7 +14,9 @@ const texts = {
         title: 'الموقع قيد الإنشاء',
         text1: 'نحن نعمل على إطلاق بوابة قصر البخاري قريباً.',
         text2: 'ابقَ على اطلاع! سيتم تحديث هذا الموقع بأحدث الأخبار والمعلومات.',
+        text3: 'تواصل معنا على',
         toggle: 'English',
+
     },
     en: {
         dir: 'ltr',
@@ -22,7 +25,8 @@ const texts = {
         title: 'Website Under Construction',
         text1: 'We are working on launching Ksar El Boukhari Portal soon.',
         text2: 'Stay tuned! This website will be updated with the latest news and information.',
-        toggle: 'عربي'
+        text3: 'Contact us at',
+        toggle: 'عربي',
     }
 };
 
@@ -33,6 +37,7 @@ function setLanguage(lang) {
     cardTitle.textContent = texts[lang].title;
     cardText1.textContent = texts[lang].text1;
     cardText2.textContent = texts[lang].text2;
+    cardText3.textContent = texts[lang].text3;
     langToggle.textContent = texts[lang].toggle;
     disclaimer.textContent = texts[lang].copyright;
     localStorage.setItem('language', lang);
