@@ -45,7 +45,7 @@
         align-items: center;
         position: relative;
         overflow: hidden;
-        background-color: #4E61D310;
+        background-color: #4750DD10;
     }
 
     /* Background with gap top & bottom */
@@ -90,13 +90,13 @@
         width: 40px;
         height: 40px;
         /* border-radius: 50%;
-        border:#4E61D310 1px solid; */
+        border:#4750DD10 1px solid; */
     }
 
     .logo {
         font-size: 28px;
         font-weight: 700;
-        color: #4E61D3;
+        color: #4750DD;
         position: relative;
         margin-top: -6px;
     }
@@ -104,20 +104,20 @@
     .lang-toggle {
         padding: 6px 12px;
         border-radius: 6px;
-        border: 1px solid #4E61D320;
+        border: 1px solid #4750DD20;
         background: white;
         cursor: pointer;
         font-weight: bold;
-        color: #4E61D3;
+        color: #4750DD;
     }
     .lang-toggle:hover {
-        background: #4E61D3;
+        background: #4750DD;
         color: white;
-        border: 1px solid #4E61D3;
+        border: 1px solid #4750DD;
     }
     .lang-toggle:active {
         background: white;
-        color: #4E61D3;
+        color: #4750DD;
     }
 
     /* Coming Soon card */
@@ -131,13 +131,42 @@
         text-align: center;
         box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         width: 400px;
-        color: #4E61D3;
+        color: #4750DD;
         display: flex;
         flex-direction: column;
         gap: 20px;
         background-color: rgba(255,255,255,0.9);
+
+        position: relative;
+        overflow: visible; /* IMPORTANT: Allow image to go out */
+
+        z-index: 2;
     }
 
+    /* the overflowing background image */
+    .card-bg-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120%;      /* Adjust size as needed */
+        transform: translate(-50%, -50%);
+        opacity: 0.15;    /* Light watermark effect */
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /* bring the text above the image */
+    .coming-soon-card h1,
+    .coming-soon-card p {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (min-width: 500px) and (max-width: 600px) {
+        .card-bg-img {
+            width: calc(100% + 0px); 
+        }
+    }
     @media (max-width: 500px) {
         .coming-soon-card {
             width: 100%;
@@ -150,6 +179,9 @@
             top: 0; 
             bottom: 0; 
         }
+        .card-bg-img {
+            width: calc(100% - 40px); 
+        }
     }
 
     .coming-soon-card h1 {
@@ -157,18 +189,18 @@
         font-size: 32px;
         line-height: 37px;
         font-weight: 700;
-        color: #4E61D3;
+        color: #4750DD;
     }
 
     .coming-soon-card p {
         font-size: 18px;
         line-height: 1.5;
-        color: #4E61D3;
+        color: #4750DD;
     }
 
     .coming-soon-card span {
         font-weight: 600;
-        color: #4E61D3;
+        color: #4750DD;
     }
 
     /* Bottom audio player */
@@ -190,7 +222,7 @@
     
     .disclaimer {
        text-align: 
-       center; color: #4E61D3; 
+       center; color: #4750DD; 
        font-size: 14px;
        font-weight: 300;
     }
@@ -210,6 +242,7 @@
 
 <!-- Centered Coming Soon Card -->
 <div class="coming-soon-card">
+    <img src="/assets/images/67.png" class="card-bg-img" alt="">
     <h1 id="cardTitle"  style="margin: 0 0 10px 0;">الموقع قيد الإنشاء</h1>
     <p id="cardText1" style="margin: 0 0  0 0; font-weight: 300;">نحن نعمل على إطلاق قصر البخاري قريباً.</p>
     <p id="cardText2" style="margin: 0 0  0 0; font-weight: 300;"><span>ابقَ على اطلاع!</span> سيتم تحديث هذا الموقع بأحدث الأخبار والمعلومات.</p>
