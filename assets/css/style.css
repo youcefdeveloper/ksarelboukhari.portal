@@ -159,6 +159,7 @@ body::before {
    font-size: 14px;
    font-weight: 300;
 }
+
 /* Responsive adjustments */
 @media (min-width: 500px) and (max-width: 600px) {
     .card-bg-img {
@@ -167,10 +168,13 @@ body::before {
 }
 @media (max-width: 500px) {
     .coming-soon-card {
-        width: 100%;
+        /* width: 100%;
         box-shadow: none;
         border-radius: 0;
-        padding: 35px 20px;
+        padding: 35px 20px; */
+
+        width: calc(100% - 40px);
+        margin: 0 20px;
     }
     body::before {
         background-size: cover;
@@ -178,7 +182,8 @@ body::before {
         bottom: 0; 
     }
     .card-bg-img {
-        width: calc(100% - 40px); 
+        /* width: calc(100% - 40px);  */
+        width: calc(100% + 20px);
     }
     .coming-soon-card h1 {
         font-size: 30px;
