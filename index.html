@@ -167,25 +167,6 @@
             width: calc(100% + 0px); 
         }
     }
-    @media (max-width: 500px) {
-        .coming-soon-card {
-            width: 100%;
-            box-shadow: none;
-            border-radius: 0;
-            padding: 35px 20px;
-        }
-        body::before {
-            background-size: cover;
-            top: 0; 
-            bottom: 0; 
-        }
-        .card-bg-img {
-            width: calc(100% - 40px); 
-        }
-        .coming-soon-card h1 {
-            font-size: 30px;
-        }
-    }
 
     .coming-soon-card h1 {
         margin: 0;
@@ -204,6 +185,26 @@
     .coming-soon-card span {
         font-weight: 600;
         color: #4750DD;
+    }
+
+    @media (max-width: 500px) {
+        .coming-soon-card {
+            width: 100%;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 35px 20px;
+        }
+        body::before {
+            background-size: cover;
+            top: 0; 
+            bottom: 0; 
+        }
+        .card-bg-img {
+            width: calc(100% - 40px); 
+        }
+        .coming-soon-card h1 {
+            font-size: 30px;
+        }
     }
 
     /* Bottom audio player */
