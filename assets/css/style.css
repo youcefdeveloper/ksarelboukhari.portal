@@ -95,7 +95,7 @@ body::before {
 /* Top-right logo and toggle container */
 .top-right {
     position: fixed;
-    top: 16px;
+    top: 20px;
     display: flex;
     justify-content: space-between;
     width: calc(100% - 32px);
@@ -254,5 +254,14 @@ body::before {
     }
    .coming-soon-card p {
         font-size: 15px;
+    }
+    .top-right {
+        top: 26px;
+    }
+    .lang-toggle {
+        padding: 9px 12px !important;
+    }
+    [lang="en"] .lang-toggle {
+        padding: 7px 12px 11px 12px !important;
     }
 }
