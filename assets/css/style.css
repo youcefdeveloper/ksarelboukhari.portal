@@ -19,19 +19,19 @@
 }
 
 .fw-light {
-    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
     font-weight: 300;
 }
 .fw-regular {
-    font-family: 'kermes-Regular', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-Regular', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
     font-weight: 400;
 }
 .fw-semiBold {
-    font-family: 'kermes-SemiBold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-SemiBold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
     font-weight: 600;
 }
 .fw-bold {
-    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif !important;
     font-weight: 700;
 }
 

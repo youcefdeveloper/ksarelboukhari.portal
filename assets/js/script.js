@@ -23,7 +23,7 @@ const texts = {
         logo: 'Ksar El Boukhari',
         copyright: 'Ksar El Boukhari © 2025',
         title: 'Website Under Construction',
-        text1: 'We are working on launching Ksar El Boukhari Portal soon.',
+        text1: 'We are working on launching KEB Portal soon.',
         text2: 'Stay tuned! This website will be updated with the latest news and information.',
         text3: 'Contact us at',
         toggle: 'عربي',
