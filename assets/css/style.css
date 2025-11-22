@@ -258,4 +258,10 @@ body::before {
     .top-right {
         top: 26px;
     }
+    .lang-toggle {
+        padding: 9px 12px;
+    }
+    [lang="en"] .lang-toggle {
+        padding: 7px 12px 11px 12px !important
+    }
 }
