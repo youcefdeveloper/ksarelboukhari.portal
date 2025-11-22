@@ -1,24 +1,80 @@
+@font-face {
+    font-family: "kermes-Light";
+    src: url(/assets/fonts/kermes/Kermes-Light.woff);
+}
+
+@font-face {
+    font-family: "kermes-Regular";
+    src: url(/assets/fonts/kermes/Kermes-Regular.woff);
+}
+
+@font-face {
+    font-family: "kermes-SemiBold";
+    src: url(/assets/fonts/kermes/Kermes-SemiBold.woff);
+}
+
+@font-face {
+    font-family: "kermes-Bold";
+    src: url(/assets/fonts/kermes/Kermes-Bold.woff);
+}
+
+.fw-light {
+    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-weight: 300;
+}
+.fw-regular {
+    font-family: 'kermes-Regular', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-weight: 400;
+}
+.fw-semiBold {
+    font-family: 'kermes-SemiBold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-weight: 600;
+}
+.fw-bold {
+    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-weight: 700;
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
     box-sizing: border-box;
     /* filter: grayscale(100%);
     -webkit-filter: grayscale(100%); */
     color: #ffffff;
 }
 * {
-    font-family: 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    font-family: 'kermes-Light', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+    color: #6610f2
 }
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
+}
+p {
+    font-size: 16px !important;
+}
+a {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px; /* increase space */
+}
+
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: #4750DD10;
+    background-color: #6610f210;
 }
 /* Background with gap top & bottom */
 body::before {
@@ -57,32 +113,36 @@ body::before {
     width: 40px;
     height: 40px;
     /* border-radius: 50%;
-    border:#4750DD10 1px solid; */
+    border:#6610f210 1px solid; */
 }
 .logo {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
-    color: #4750DD;
+    color: #6610f2;
     position: relative;
     margin-top: -6px;
+    font-family: 'kermes-Bold', 'Cairo', 'Montserrat', 'Hind Madurai', sans-serif;
 }
 .lang-toggle {
-    padding: 6px 12px;
+    padding: 8px 12px;
     border-radius: 6px;
-    border: 1px solid #4750DD20;
+    border: 1px solid #6610f220;
     background: white;
     cursor: pointer;
     font-weight: bold;
-    color: #4750DD;
+    color: #6610f2;
+}
+[lang="en"] .lang-toggle {
+    padding: 6px 12px 10px 12px !important
 }
 .lang-toggle:hover {
-    background: #4750DD;
+    background: #6610f2;
     color: white;
-    border: 1px solid #4750DD;
+    border: 1px solid #6610f2;
 }
 .lang-toggle:active {
     background: white;
-    color: #4750DD;
+    color: #6610f2;
 }
 /* Coming Soon card */
 .coming-soon-card {
@@ -94,8 +154,8 @@ body::before {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-    width: 400px;
-    color: #4750DD;
+    max-width: 440px;
+    color: #6610f2;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -123,19 +183,21 @@ body::before {
 }
 .coming-soon-card h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 37px;
     font-weight: 700;
-    color: #4750DD;
+    color: #6610f2;
+    margin: 0 0 24px 0;
 }
 .coming-soon-card p {
     font-size: 18px;
     line-height: 1.5;
-    color: #4750DD;
+    color: #6610f2;
+    margin: 0 0 10px 0;
 }
 .coming-soon-card span {
     font-weight: 600;
-    color: #4750DD;
+    color: #6610f2;
 }
 /* Bottom audio player */
 .bottom-player {
@@ -155,18 +217,18 @@ body::before {
 
 .disclaimer {
    text-align: 
-   center; color: #4750DD; 
-   font-size: 14px;
+   center; color: #6610f2; 
+   font-size: 12px !important;
    font-weight: 300;
 }
 
 /* Responsive adjustments */
-@media (min-width: 500px) and (max-width: 600px) {
+@media (min-width: 540px) and (max-width: 700px) {
     .card-bg-img {
         width: calc(100% + 0px); 
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .coming-soon-card {
         /* width: 100%;
         box-shadow: none;
@@ -188,6 +250,9 @@ body::before {
         width: calc(100% + 20px);
     }
     .coming-soon-card h1 {
-        font-size: 26px;
+        font-size: 22px;
+    }
+   .coming-soon-card p {
+        font-size: 15px;
     }
 }
